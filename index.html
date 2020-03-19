@@ -1,6 +1,11 @@
 <html>
   <body>
-    This link below, when clicked while viewing a patreon poll will print out the exact current vote counts of that poll. Drag the below link to your bookmarks, and click that bookmark while viewing the patreon page.
-    <a href="javascript:var vote = ""; window.patreon.bootstrap.post.included.forEach(function(f) { if(f.type == "poll_choice") { vote = vote+(f.attributes.text_content+" has "+f.attributes.num_responses +" votes\n"); }}); alert(vote)">Patreon Vote Counter</a>
+    <h1>Patreon vote counter</h1>
+    <p>
+      This link below, when clicked while viewing a patreon poll will print out the exact current vote counts of that poll. Drag the below link to your bookmarks, and click that bookmark while viewing the patreon page.
+    </p>
+    <p>
+      <a href="javascript:var vote = ""; window.patreon.bootstrap.post.included.forEach(function(f) { if(f.type == "poll_choice") { vote = vote+(f.attributes.text_content+" has "+f.attributes.num_responses +" votes\n"); }}); alert(vote)">Patreon Vote Counter</a>
+    </p>
   </body>
 </html>
